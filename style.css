@@ -43,8 +43,54 @@ body{
     width: 230px;
     height: 100%;
     background-color: black;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    padding: 20px;
+}
+
+.container .logo, .container .menu_page{
+    margin-bottom: 30px;
+}
+
+.logo img{
+    height: 40px;
+}
+
+.side_item{
+    color: white;
+    font-size: 0.8rem;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0;
+    margin-bottom: 13px;
+}
+
+.side_item img{
+    width: 22px;
+    margin-right: 5px;
+}
+
+.playlist{
+    color: white;
+}
+
+.new_playlist{
+    margin-top: 8px;
+    margin-bottom: 13px;
 
 }
+
+i{
+    color: white;
+    font-size: 2rem;
+    margin-right: 8px;
+
+}
+
 
 header{
     width: calc(100% - 230px);
@@ -97,7 +143,7 @@ nav.menu_content{
 
 /* --FOOTER-- */
 
-footer{
+footer.page_footer{
     width: 100%;
     height: 90px;
     background-color: rgb(40, 40, 40);
