@@ -58,10 +58,11 @@ nav.menu_content{
     background-color: darkslateblue;
 }
 
-section.recent{
+.content .categories{
     width: 100%;
     height: calc(100% - 50px);
     background-color: darkorchid;
+    overflow: scroll;
 }
 
 
@@ -70,4 +71,6 @@ section.recent{
     width: 100%;
     height: 100px;
     background-color: darkgoldenrod;
+    position: relative;
+    z-index: 100;
 }
