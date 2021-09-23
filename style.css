@@ -4,6 +4,17 @@
     padding: 0;
 }
 
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.flt_lft{
+    float: left;
+}
+
 /* DEBUG E REGOLE IN PROVA */
 
 body.debug{
@@ -12,10 +23,24 @@ body.debug{
     background-color: darkred;
 }
 
+
+.debug .site_body{
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+
+
 .debug div.side_bar{
     width: 175px;
-    height: calc(100% - 100px);
+    height: 100%;
     background-color: black;
+}
+
+header{
+    width: calc(100% - 175px);
+    height: 120px;
+    background-color: darkgreen;
 }
 
 .debug footer{
