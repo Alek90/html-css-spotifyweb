@@ -4,6 +4,13 @@
     padding: 0;
 }
 
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: darkred;
+}
+
+/* UTILITY */
 
 .clearfix::after{
     content: "";
@@ -19,58 +26,90 @@
     display: flex;
 }
 
-/* DEBUG E REGOLE IN PROVA */
-
-body.debug{
-    width: 100vw;
-    height: 100vh;
-    background-color: darkred;
-}
 
 
-.debug .site_body{
+/* \/\/\/\/\/\/\/\/\/\/\/\/\SITE_BODY/\/\/\/\/\/\/\/\/\/\/\/\/ */
+
+
+.site_body{
     width: 100%;
-    height: calc(100% - 100px);
+    height: calc(100% - 90px);
 }
 
 
+/* --SIDE_BAR--  +  --HEADER-- */
 
-.debug div.side_bar{
-    width: 175px;
+.side_bar{
+    width: 230px;
     height: 100%;
     background-color: black;
+
 }
 
 header{
-    width: calc(100% - 175px);
-    height: 120px;
-    background-color: darkgreen;
+    width: calc(100% - 230px);
+    height: 90px;
+    background-color: rgb(8, 11, 18);
+    justify-content: flex-end;
+    align-items: center;
 }
 
-main.content{
-    width: calc(100% - 175px);
-    height: calc(100% - 120px);
+.upgrade{
+    width: 218px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px; 
+    margin: 0 30px; 
 }
+
+
+
+/* --MAIN-- */
+
+
+main.content{
+    width: calc(100% - 230px);
+    height: calc(100% - 90px);
+    background-color: rgb(20, 25, 34);
+}
+
+/* Nav */
 
 nav.menu_content{
     width: 100%;
     height: 50px;
-    background-color: darkslateblue;
 }
+
+
+/* .Categories + .categories > section */
 
 .content .categories{
     width: 100%;
     height: calc(100% - 50px);
-    background-color: darkorchid;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 
 
-.debug footer{
+/* --FOOTER-- */
+
+footer{
     width: 100%;
-    height: 100px;
-    background-color: darkgoldenrod;
+    height: 90px;
+    background-color: rgb(40, 40, 40);
     position: relative;
     z-index: 100;
+}
+
+
+
+/* ----- EFFETTI ----- */
+
+.upgrade:hover{
+    transform: scale(120%);
+
 }
