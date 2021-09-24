@@ -58,11 +58,9 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
-
-.container{
     padding: 20px;
 }
+
 
 .container .logo, .container .menu_page{
     margin-bottom: 30px;
@@ -100,7 +98,17 @@ i{
     color: white;
     font-size: 2rem;
     margin-right: 8px;
+}
 
+.download{
+    font-size: 0.8rem;
+}
+
+.download img{
+    width: 15px;
+    vertical-align: middle;
+    filter:invert(0.5);
+    margin-right: 8px;
 }
 
 
@@ -118,7 +126,6 @@ header{
     line-height: 42px;
     text-align: center;
     font-size: 0.8rem;
-    color: white;
     border: 1px solid white;
     border-radius: 20px; 
     margin: 0 30px; 
