@@ -57,8 +57,8 @@ body{
     background-color: black;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    align-items: flex-start;
+    padding: 20px 20px 8px;
 }
 
 
@@ -71,7 +71,6 @@ body{
 }
 
 .side_item{
-    color: white;
     font-size: 0.8rem;
     justify-content: flex-start;
     align-items: center;
@@ -84,14 +83,9 @@ body{
     margin-right: 5px;
 }
 
-.playlist{
-    color: white;
-}
-
 .new_playlist{
     margin-top: 8px;
     margin-bottom: 13px;
-
 }
 
 i{
@@ -101,15 +95,37 @@ i{
 }
 
 .download{
+    width: 100%;
     font-size: 0.8rem;
+    align-content: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgb(113, 113, 113);
+    vertical-align: middle;
 }
 
 .download img{
-    width: 15px;
-    vertical-align: middle;
+    width: 14px;
     filter:invert(0.5);
     margin-right: 8px;
 }
+
+.user{
+    padding-top: 12px;
+    font-size: 0.9rem;
+    align-items: center;
+}
+
+.img_profile{
+    width: 25px;
+    height: 25px;
+    border-radius: 12px;
+    background-color: rgb(128, 128, 128);
+    background-image: url(./img/profile.svg);
+    background-size: cover;
+    margin-right: 8px;
+}
+
+/* /side_bar */
 
 
 header{
@@ -131,6 +147,7 @@ header{
     margin: 0 30px; 
 }
 
+/* /header */
 
 
 /* --MAIN-- */
