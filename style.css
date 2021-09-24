@@ -26,6 +26,18 @@ body{
     display: flex;
 }
 
+.txt_light{
+    color: white;
+}
+
+.txt_mid_dark{
+    color: rgb(125, 127, 132);
+}
+
+.txt_dark{
+    color: rgb(113, 113, 113);
+}
+
 
 
 /* \/\/\/\/\/\/\/\/\/\/\/\/\SITE_BODY/\/\/\/\/\/\/\/\/\/\/\/\/ */
