@@ -395,3 +395,16 @@ footer i:not(.fa-play-circle, .fa-circle){
 }
 
 
+/* ---RESPONSIVE--- */
+
+@media screen and (max-widt: 1100px){
+    
+    .suggestion{
+        flex-wrap: wrap;
+    }
+    
+    .suggestion > div{
+        flex-shrink: 0;
+    }
+    
+}
