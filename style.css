@@ -72,23 +72,28 @@ i{
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px 20px 8px;
+    padding: 20px 0 8px;
 }
 
+.logo, .menu_page, .playlist, .bar_footer{
+    width: 100%;
+}
 
 .container .logo, .container .menu_page{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .logo img{
     height: 40px;
+    padding-left: 20px;
 }
 
 .side_item{
+    padding: 5px 20px;
     justify-content: flex-start;
     align-items: center;
     flex-shrink: 0;
-    margin-bottom: 13px;
+    margin-bottom: 5px;
 }
 
 .side_item img{
@@ -96,9 +101,14 @@ i{
     margin-right: 5px;
 }
 
+.home{
+    border-left: 3px solid rgb(173, 255, 47);
+}
+
 .search img, .bookshelf img{
     filter: invert(0.5);
 }
+
 
 .new_playlist i{
     vertical-align: middle;
@@ -108,7 +118,6 @@ i{
 }
 
 .new_playlist{
-    margin-top: 8px;
     margin-bottom: 13px;
 }
 
@@ -186,7 +195,7 @@ nav.menu_content{
     align-items: center;
 }
 
-nav > div{
+main > nav > div{
     margin: 0 12px;
 }
 
