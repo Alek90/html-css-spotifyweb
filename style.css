@@ -226,7 +226,6 @@ h2{
 
 .suggestion > div{
     width: calc(100% / 6 - 15px);
-    min-width: 85px;
     margin: 15px 15px 0 0;
 }
 
@@ -399,8 +398,16 @@ footer i:not(.fa-play-circle, .fa-circle){
 
 /* ---RESPONSIVE--- */
 
-@media screen and (max-widt: 950px){
+@media screen and (max-widt: 1024px){
     .suggestion > div{
         width: calc(100% / 4 - 10px);
+    }
+
+    .preference{
+        flex-direction: column;
+    }
+
+    .player{
+        flex-shrink: 2;
     }
 }
