@@ -221,10 +221,12 @@ h2{
 
 .suggestion{
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .suggestion > div{
     width: calc(100% / 6 - 15px);
+    min-width: 85px;
     margin: 15px 15px 0 0;
 }
 
@@ -397,14 +399,8 @@ footer i:not(.fa-play-circle, .fa-circle){
 
 /* ---RESPONSIVE--- */
 
-@media screen and (max-widt: 1100px){
-    
-    .suggestion{
-        flex-wrap: wrap;
-    }
-    
+@media screen and (max-widt: 950px){
     .suggestion > div{
-        flex-shrink: 0;
+        width: calc(100% / 4 - 10px);
     }
-    
 }
