@@ -48,6 +48,10 @@ body{
     font-weight: 800;
 }
 
+i{
+    color: white;
+}
+
 
 
 /* \/\/\/\/\/\/\/\/\/\/\/\/\SITE_BODY/\/\/\/\/\/\/\/\/\/\/\/\/ */
@@ -174,7 +178,14 @@ main.content{
 nav.menu_content{
     width: 100%;
     height: 50px;
+    justify-content: center;
+    align-items: center;
 }
+
+nav > div{
+    margin: 0 12px;
+}
+
 
 
 /* .Categories + .categories > section */
@@ -184,6 +195,52 @@ nav.menu_content{
     height: calc(100% - 50px);
     overflow-y: scroll;
 }
+
+
+.categories > section{
+    width: 100%;
+    padding: 20px;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+.suggestion{
+    justify-content: space-between;
+}
+
+.suggestion > div{
+    width: calc(100% / 6 - 15px);
+    margin-right: 15px;
+}
+
+.select{
+    position: relative;
+}
+
+.select > img{
+    width: 100%;
+}
+
+.select i{
+    font-size: 3.6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+}
+
+.title{
+    font-size: 11px;
+}
+
+.title, .info{
+    text-align: center;
+    padding-top: 10px;
+}
+
 
 
 
@@ -226,20 +283,15 @@ footer.page_footer{
     text-align: center;
 }
 
-footer i{
-    color: white;
-}
-
 footer i:not(.fa-play-circle){
     font-size: 0.8rem;
-    padding: 0 2px;
+    padding: 0 5px;
 }
 
 .commands .fa-play-circle{
     font-size: 1.5rem;
     vertical-align: middle;
     padding: 0 12px;
-
 }
 
 .duration_line{
@@ -294,3 +346,5 @@ footer i:not(.fa-play-circle){
 .txt_dark:hover, .txt_mid_dark:hover{
     color: white;
 }
+
+
