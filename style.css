@@ -347,13 +347,13 @@ footer i:not(.fa-play-circle, .fa-circle){
 }
 
 .volume{
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-.volume i:not(.fa-circle){
+/* .volume i:not(.fa-circle){
     margin: 5px;
-}
+} */
 
 .volume .total_line{
     width: 118px;
@@ -398,16 +398,35 @@ footer i:not(.fa-play-circle, .fa-circle){
 
 /* ---RESPONSIVE--- */
 
-@media screen and (max-widt: 1024px){
+@media screen and (max-widtH: 1024px){
+
     .suggestion > div{
-        width: calc(100% / 4 - 10px);
+        width: calc(100% / 4);
+        max-width: 150px;
+        flex-shrink: 2;
+    }
+
+    .preference, .volume{
+        width: 20%;
     }
 
     .preference{
         flex-direction: column;
+        justify-content: center;
     }
 
     .player{
-        flex-shrink: 2;
+        width: 50%;
     }
+
+    .player .total_line{
+        width: 80%;
+    }
+
+    .volume .total_line{
+        width: 50%
+    }
+
+
 }
+
