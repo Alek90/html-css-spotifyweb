@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -84,7 +86,7 @@
 
                     <div class="img_profile"></div>
 
-                    <div class="username txt_light">
+                    <div class="username txt_light bold">
                         John Doe
                     </div>
 
@@ -127,7 +129,72 @@
 
 
     <!-- Footer che prende tutta la larghezza della viewport -->
-    <footer class="page_footer">
+    <footer class="page_footer flex">
+
+        <div class="track flex">
+
+            <img src="./img/sinister.jpeg" alt="">
+
+            <div class="song flex">
+
+               <div class="txt_light">
+                    Sinister
+               </div>
+
+               <div class="txt_dark">
+                   Brano Nome
+               </div>
+
+            </div>
+
+            <div class="preference flex">
+
+                <i class="far fa-heart txt_dark"></i>
+
+                <i class="far fa-folder txt_dark"></i>
+
+            </div>
+
+        </div>
+
+        <div class="player">
+
+            <div class="commands">
+
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo-alt"></i>
+
+            </div>
+
+            <div class="duration_line flex">
+
+                <div class="time txt_light">
+                    
+                    0:25
+
+                </div>
+
+                <div class="total_line">
+
+                    <div class="reproduced"></div>
+                    
+
+                </div>
+
+
+                <div class="time txt_light">
+                    
+                    4:35
+                    
+                </div>
+                
+                
+            </div>
+
+        </div>
 
     </footer>
     
