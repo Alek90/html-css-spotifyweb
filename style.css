@@ -373,7 +373,7 @@ footer i:not(.fa-play-circle, .fa-circle){
     color: white;
 }
 
-.suggestion > div:hover .select > i{
+.select:hover i{
     color: white;
 }
 
